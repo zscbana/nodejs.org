@@ -1,0 +1,57 @@
+pipeline {
+    agent { label 'built-in' }
+    tools {
+        nodejs 'NodeJS'
+    }
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/zscbana/nodejs.org'
+            }
+        }
+        stage('Check Node.js Version') {
+            steps {
+                sh 'node -v'
+                sh 'npm -v'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Unit Test') {
+            steps {
+                sh 'npm test'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'npm run build'
+            }
+        }
+        stage('Docker Image') {
+            agent {
+                label 'AzureAgent'
+            }
+            steps {
+                script {
+                    git branch: 'main', url: 'https://github.com/zscbana/nodejs.org'
+                    app = docker.build("omarbanna/orange:latest")
+                }
+            }
+        }
+        stage('Push The Image') {
+            agent {
+                label 'AzureAgent'
+            }
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', 'DockerHub') {
+                        app.push()
+                    }
+                }
+            }
+        }
+    }
+}
