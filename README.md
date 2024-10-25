@@ -7,6 +7,7 @@
   <img src="icons/jenkins.png" alt="Jenkins Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
   <img src="icons/azure.png" alt="Azure Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
   <img src="icons/ubuntu.png" alt="Ubuntu Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/docker.png" alt="Docker Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
 </div>
 
 ## Overview
