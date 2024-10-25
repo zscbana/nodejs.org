@@ -1,4 +1,4 @@
-# Orange Final CI/CD Project ! 
+# Orange Final CI/CD Project
 
 <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
   <img src="icons/orange.png" alt="Orange Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
@@ -7,7 +7,7 @@
   <img src="icons/jenkins.png" alt="Jenkins Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
   <img src="icons/azure.png" alt="Azure Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
   <img src="icons/ubuntu.png" alt="Ubuntu Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
-  <img src="icons/docker.png" alt="Docker Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/docker1.png" alt="Docker Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
 </div>
 
 ## Overview
