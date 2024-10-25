@@ -1,10 +1,14 @@
-# Orange Final CI/CD Project !
-[ArgoCD Icon](icons/orange.png) [ArgoCD Icon](icons/digitalhub.png)
-[ArgoCD Icon](icons/argocd.png)
-[jenkins Icon](icons/jenkins.png)
-[ArgoCD Icon](icons/azure.png)
-[ArgoCD Icon](icons/ubuntu.png)
-[ArgoCD Icon](icons/docker.png)
+# Orange Final CI/CD Project ! 
+
+<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+  <img src="icons/orange.png" alt="Orange Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/digitalhub.png" alt="DigitalHub Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/argocd.png" alt="ArgoCD Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/jenkins.png" alt="Jenkins Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/azure.png" alt="Azure Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/ubuntu.png" alt="Ubuntu Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+  <img src="icons/docker.png" alt="Docker Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
+</div>
 
 ## Overview
 This project involves deploying a Node.js application from the Node.js GitHub repository to a local Kubernetes cluster. We will use ArgoCD for continuous delivery and set up a Jenkins pipeline to automate the build and deployment process.
