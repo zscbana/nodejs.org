@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-app-deployment
+  namespace: django
+  labels: 
+    app: myapp
+    type: nodejs
+spec:
+  selector:
+    matchLabels:
+      app: myapp
+  replicas: 1
+  template:
+    metadata:
+      name: nodejs
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: nodejs
+          image: omarbanna/django
+          ports:
+            - containerPort: 3000
