@@ -134,7 +134,7 @@ You can view the Docker image at: [Docker Hub - Omar Banna](https://hub.docker.c
              image: omarbanna/orange
              ports:
                - containerPort: 3000
-``
+```
 - Expose the Deployment
 Expose the deployment on port 3000 as a NodePort service.
 
@@ -149,3 +149,15 @@ Retrieve the service URL.
 
 - visit  the website
 ![Screenshot 4](screenshots/screenshot4.png)
+
+# are of improvent 
+
+- improve repo starcure 
+
+- use gitops 
+
+- use more repicas and service
+
+- host in aks or eks on the cloud
+
+## Feel free to adjust any sections or add more details as needed!
