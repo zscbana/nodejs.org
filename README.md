@@ -1,4 +1,4 @@
-# Kubernetes Cluster
+# Orange Final CI/CD Project ![ArgoCD Icon](path/to/argocd-icon.png) ![Jenkins Icon](path/to/jenkins-icon.png) ![Orange Icon](path/to/orange-icon.png)
 
 ## Overview
 This project involves deploying a Node.js application from the Node.js GitHub repository to a local Kubernetes cluster. We will use ArgoCD for continuous delivery and set up a Jenkins pipeline to automate the build and deployment process.
