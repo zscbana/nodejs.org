@@ -92,3 +92,60 @@ You can view the Docker image at: [Docker Hub - Omar Banna](https://hub.docker.c
 ## Screenshots
 
 ![Screenshot 1](screenshots/screenshot1.png)
+
+# Part 2: Deploy the Node.js App to Kubernetes using ArgoCD
+
+## Prerequisites
+- ArgoCD installed on Minikube.
+- A cluster created in ArgoCD.
+
+## Steps to Deploy
+
+1. **Add Repository**  
+   Add the repository link to the ArgoCD `Settings > Repositories`.
+
+2. **Create Automation Application**  
+   Create an application named `mac-cd` with automatic sync enabled.
+
+3. **Deployment Configuration**  
+   In the `macmini/` path, create a `deployment.yaml` file with the following configuration to set up a deployment with 1 replica using the same image from the Jenkins CI process:
+
+  ```yaml
+   apiVersion: apps/v1
+   kind: Deployment
+   metadata:
+     name: node-app-deployment
+     namespace: webapp
+     labels: 
+       app: myapp
+       type: nodejs
+   spec:
+     selector:
+       matchLabels:
+         app: myapp
+     replicas: 1
+     template:
+       metadata:
+         labels:
+           app: myapp
+       spec:
+         containers:
+           - name: nodejs
+             image: omarbanna/orange
+             ports:
+               - containerPort: 3000
+``
+- Expose the Deployment
+Expose the deployment on port 3000 as a NodePort service.
+
+- Get Service URL
+Retrieve the service URL.
+
+![Screenshot 2](screenshots/screenshot2.png)
+
+# Final Step
+- check argo application
+![Screenshot 3](screenshots/screenshot3.png)
+
+- visit  the website
+![Screenshot 4](screenshots/screenshot4.png)
