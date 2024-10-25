@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: nodejs
-          image: omarbanna/orange
+          image: nginx:latest #omarbanna/orange  
           ports:
             - containerPort: 3000
