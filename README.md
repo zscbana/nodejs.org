@@ -9,11 +9,10 @@
   <img src="icons/ubuntu.png" alt="Ubuntu Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
   <img src="icons/docker1.png" alt="Docker Icon" style="width: 40px; height: 40px; border-radius: 50%; margin: 5px;">
 </div>
-<div>
 
 # ![ GIF ](screenshots/Project.gif)
 
-</div>
+
 ## Overview
 This project involves deploying a Node.js application from the Node.js GitHub repository to a local Kubernetes cluster. We will use ArgoCD for continuous delivery and set up a Jenkins pipeline to automate the build and deployment process.
 
