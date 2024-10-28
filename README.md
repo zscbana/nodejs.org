@@ -11,7 +11,7 @@
 </div>
 <div>
 
-![ GIF ](screenshots/Project.gif)
+# ![ GIF ](screenshots/Project.gif)
 
 </div>
 ## Overview
